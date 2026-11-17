@@ -15,7 +15,9 @@ def check_eligibility(name, age, indian_citizen):
         print("Reason: Not an Indian citizen.")
         return False
 
-
+total_voters = 0
+eligible_voters = 0
+ineligible_voters = 0
 
 while True:
     name = input("Enter your name: ").strip()
@@ -50,10 +52,6 @@ while True:
     result = check_eligibility(name, age, indian_citizen)
     
 
-    total_voters = 0
-    eligible_voters = 0
-    ineligible_voters = 0
-
     total_voters += 1
 
     if result == True:
@@ -70,7 +68,7 @@ while True:
         else:
             print("Please enter yes or no.")
     
-        if check == "no":
+    if check == "no":
             break
 
     
