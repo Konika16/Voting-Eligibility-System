@@ -44,12 +44,9 @@ while True:
     
 
     while True:
-
         citizen = input("Are you an Indian citizen? (yes/no): ").strip().lower()
-
         if citizen == "yes" or citizen == "no":
             break
-
         else:
             print("Invalid input. Please enter yes or no.")
 
